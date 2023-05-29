@@ -4,6 +4,15 @@ This is the flash-tool for Amlogic platforms.
 This flash-tool script rely on update linux tool that need firstly to be installed.
 Please read the file tools/_install_/README before to proceed here.
 
+======================================================================
+bpi:
+
+Install packages on ubuntu 20.04 to fix amlogic device not found issue
+
+# sudo apt install libusb-dev git parted lib32z1 lib32stdc++6 libusb-0.1-4 libusb-1.0-0-dev libusb-1.0-0 ccache libncurses5 pv base-files linux-base xz-utils lib32ncurses6
+
+======================================================================
+
 After than you can call flash-tool.sh from anywhere, it will give you quick help :
 
 Usage      : ./flash-tool.sh --img=/path/to/aml_upgrade_package.img> --parts=<all|none|bootloader|dtb|logo|recovery|boot|system|..> [--wipe] [--reset=<y|n>] [--soc=<m8|axg|gxl|txlx|g12a>] [efuse-file=/path/to/file/location] [bootloader|dtb|logo|boot|...-file=/path/to/file/partition] [--password=/path/to/password.bin]
